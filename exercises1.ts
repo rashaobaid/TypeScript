@@ -1,11 +1,11 @@
 
-export interface User{
+ export interface User{
     name: string,
-       age: number,
-       occupation: string
+    age: number,
+    occupation: string
 }
 
-export const users: User[] = [
+ const users: User[] = [
    {
        name: 'Max Mustermann',
        age: 25,
@@ -18,10 +18,9 @@ export const users: User[] = [
    }
 ];
 
-export function logPerson(user: User) {
+ function logPerson(user: User) {
    console.log(` - ${user.name}, ${user.age}`);
 }
 
 console.log('Users:');
 users.forEach(logPerson);
-
